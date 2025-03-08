@@ -19,30 +19,38 @@ Follow these steps to set up and run the application:
    git clone https://github.com/stanislavstru/test-task-server-part.git ./
    ```
 
-2. **Setup environment variables**
+2. **Install Dependencies**
+
+   Run the following command to install all necessary dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. **Setup environment variables**
 
    - Rename `example.env` to `.env`.
    - Update `DATABASE_URL` with your database connection string.
 
-3. **Run database migrations**
+4. **Run database migrations**
 
    ```sh
    npm run prisma:migrate:dev
    ```
 
-4. **Build the project**
+5. **Build the project**
 
    ```sh
    npm run build
    ```
 
-5. **Start the server**
+6. **Start the server**
 
    ```sh
    npm start
    ```
 
-6. **Check if the server is running**
+7. **Check if the server is running**
    - You should see:
      ```sh
      🚀 Server running on http://localhost:8000
