@@ -16,7 +16,7 @@ Follow these steps to set up and run the application:
 1. **Clone the repository**
 
    ```sh
-   git clone https://github.com/stanislavstru/test-task-client-part.git ./
+   git clone https://github.com/stanislavstru/test-task-server-part.git ./
    ```
 
 2. **Setup environment variables**
