@@ -1,0 +1,25 @@
+generator typescriptInterfaces {
+  provider    = "prisma-generator-typescript-interfaces"
+  output      = "../types/types-from-prisma.ts"
+  modelSuffix = "_model_type"
+  enumSuffix  = "_enum"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model tasks {
+  id         String   @id @default(uuid())
+  title      String
+  color      String
+  completed  Boolean  @default(false)
+  is_deleted Boolean  @default(false)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
